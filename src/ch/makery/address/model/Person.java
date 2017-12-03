@@ -32,7 +32,7 @@ public class Person {
 
     /**
      * Constructor with some initial data.
-     * 
+     *
      * @param firstName
      * @param lastName
      */
@@ -107,6 +107,7 @@ public class Person {
         return city;
     }
 
+    @XmlJavaTypeAdapter(LocalDateAdapter.class)
     public LocalDate getBirthday() {
         return birthday.get();
     }
